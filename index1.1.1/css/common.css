@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+/*---------------------设置默认样式---------------------*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+    background: #f9f9f9;
+    color: #545454;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+
+/*标题*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+
+/*列表*/
+
+dl,
+ol,
+ul {
+    list-style: none;
+}
+
+
+/*设置和清除a链接样式*/
+
+a {
+    color: #545454;
+    text-decoration: none;
+    outline: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/*重置样式*/
+
+input,
+textarea,
+button,
+select,
+code,
+kbd,
+pre,
+samp,
+article {
+    border: none;
+    outline: none;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+b,i,u{
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*清除图片默认样式*/
+
+img {
+    outline: none;
+    vertical-align: center;
+}
+/*清除p标签外边距*/
+body,p,figure{
+    margin:0;
+}
+
+/*设置占位文字颜色*/
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+
+/*清除浮动*/
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*1像素边框*/
+
+.border-1px-t::before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 0;
+    border-bottom: 1px solid #cfcfcf;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.border-1px-b::after {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 0;
+    border-bottom: 1px solid #cfcfcf;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.border-1px-r::after {
+    content: "";
+    display: block;
+    height: 200%;
+    border-right: 1px solid #cfcfcf;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform-origin: right top;
+    -webkit-transform-origin: right top;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/*布局相关*/
+
+.page {
+    width: 10rem;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.bg-color1 {
+    background: #e7e7e7;
+}
+
+.bg-color2 {
+    background: #f0eff5;
+}
+
+
+/*---------------------适配屏幕宽度---------------------*/
+
+
+/*1rem = (屏幕宽度/10) px*/
+
+@media screen and (max-width:319px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:320px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:360px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width:375px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 37.5px;
+    }
+}
+
+@media screen and (min-width:384px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 38.4px;
+    }
+}
+
+@media screen and (min-width:400px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:412px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 41.2px;
+    }
+}
+
+@media screen and (min-width:414px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 41.4px;
+    }
+}
+
+@media screen and (min-width:450px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width:480px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width:540px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 54px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:640px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width:960px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 96px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 128px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 160px;
+    }
+}
